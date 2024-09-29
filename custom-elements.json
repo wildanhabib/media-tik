@@ -1,0 +1,793 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "build-haxcms.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "build.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/app-todo.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "appTodo",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference"
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "privacy": "public",
+              "attribute": "title"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "fieldName": "title"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "module": "src/app-todo.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "appTodo",
+          "declaration": {
+            "name": "appTodo",
+            "module": "src/app-todo.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/pause-tambahan.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PauseContainer",
+          "members": [
+            {
+              "kind": "method",
+              "name": "handleShowAll"
+            },
+            {
+              "kind": "field",
+              "name": "showAllContent",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "privacy": "public",
+              "attribute": "showAllContent"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "showAllContent",
+              "fieldName": "showAllContent"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js"
+          },
+          "tagName": "pause-container",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "pause-container",
+          "declaration": {
+            "name": "PauseContainer",
+            "module": "src/pause-tambahan.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/pause.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "AnimatedPauseComponent",
+          "members": [
+            {
+              "kind": "method",
+              "name": "renderContent"
+            },
+            {
+              "kind": "method",
+              "name": "renderButtons"
+            },
+            {
+              "kind": "method",
+              "name": "toggleShowMore"
+            },
+            {
+              "kind": "method",
+              "name": "showMore"
+            },
+            {
+              "kind": "method",
+              "name": "pause"
+            },
+            {
+              "kind": "field",
+              "name": "visibleContent",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "privacy": "public",
+              "attribute": "visibleContent"
+            },
+            {
+              "kind": "field",
+              "name": "showButtons",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true",
+              "privacy": "public",
+              "attribute": "showButtons"
+            },
+            {
+              "kind": "field",
+              "name": "showMoreVisible",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "privacy": "public",
+              "attribute": "showMoreVisible"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "visibleContent",
+              "fieldName": "visibleContent"
+            },
+            {
+              "name": "showButtons",
+              "fieldName": "showButtons"
+            },
+            {
+              "name": "showMoreVisible",
+              "fieldName": "showMoreVisible"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js"
+          },
+          "tagName": "animated-pause-component",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "animated-pause-component",
+          "declaration": {
+            "name": "AnimatedPauseComponent",
+            "module": "src/pause.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/pausev2.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ModifiedPauseComponent",
+          "members": [
+            {
+              "kind": "method",
+              "name": "renderContent"
+            },
+            {
+              "kind": "method",
+              "name": "renderButtons"
+            },
+            {
+              "kind": "method",
+              "name": "handleClick"
+            },
+            {
+              "kind": "field",
+              "name": "visibleContent",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "privacy": "public",
+              "attribute": "visibleContent"
+            },
+            {
+              "kind": "field",
+              "name": "showButtons",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true",
+              "privacy": "public",
+              "attribute": "showButtons"
+            },
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "'More...'",
+              "privacy": "public",
+              "attribute": "label"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "visibleContent",
+              "fieldName": "visibleContent"
+            },
+            {
+              "name": "showButtons",
+              "fieldName": "showButtons"
+            },
+            {
+              "name": "label",
+              "fieldName": "label"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js"
+          },
+          "tagName": "modified-pause-component",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "modified-pause-component",
+          "declaration": {
+            "name": "ModifiedPauseComponent",
+            "module": "src/pausev2.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/pausev3.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "EnhancedPauseComponent",
+          "members": [
+            {
+              "kind": "method",
+              "name": "renderContent"
+            },
+            {
+              "kind": "method",
+              "name": "renderButtons"
+            },
+            {
+              "kind": "method",
+              "name": "handlePause"
+            },
+            {
+              "kind": "method",
+              "name": "toggleShowAll"
+            },
+            {
+              "kind": "method",
+              "name": "showAll"
+            },
+            {
+              "kind": "field",
+              "name": "visibleContent",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "privacy": "public",
+              "attribute": "visibleContent"
+            },
+            {
+              "kind": "field",
+              "name": "showButtons",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true",
+              "privacy": "public",
+              "attribute": "showButtons"
+            },
+            {
+              "kind": "field",
+              "name": "showAllOption",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "privacy": "public",
+              "attribute": "showAllOption"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "visibleContent",
+              "fieldName": "visibleContent"
+            },
+            {
+              "name": "showButtons",
+              "fieldName": "showButtons"
+            },
+            {
+              "name": "showAllOption",
+              "fieldName": "showAllOption"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js"
+          },
+          "tagName": "enhanced-pause-component",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "enhanced-pause-component",
+          "declaration": {
+            "name": "EnhancedPauseComponent",
+            "module": "src/pausev3.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/pausev4-multiple.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "EnhancedMultipleChoiceComponent",
+          "members": [
+            {
+              "kind": "method",
+              "name": "shuffleArray",
+              "parameters": [
+                {
+                  "name": "array"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "renderContent"
+            },
+            {
+              "kind": "method",
+              "name": "renderButtons"
+            },
+            {
+              "kind": "method",
+              "name": "handlePause"
+            },
+            {
+              "kind": "method",
+              "name": "toggleShowAll"
+            },
+            {
+              "kind": "method",
+              "name": "showAll"
+            },
+            {
+              "kind": "field",
+              "name": "question",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "privacy": "public",
+              "attribute": "question"
+            },
+            {
+              "kind": "field",
+              "name": "randomize",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "privacy": "public",
+              "attribute": "randomize"
+            },
+            {
+              "kind": "field",
+              "name": "visibleContent",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "privacy": "public",
+              "attribute": "visibleContent"
+            },
+            {
+              "kind": "field",
+              "name": "showButtons",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true",
+              "privacy": "public",
+              "attribute": "showButtons"
+            },
+            {
+              "kind": "field",
+              "name": "showAllOption",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "privacy": "public",
+              "attribute": "showAllOption"
+            },
+            {
+              "kind": "field",
+              "name": "options",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "question",
+              "fieldName": "question"
+            },
+            {
+              "name": "randomize",
+              "fieldName": "randomize"
+            },
+            {
+              "name": "visibleContent",
+              "fieldName": "visibleContent"
+            },
+            {
+              "name": "showButtons",
+              "fieldName": "showButtons"
+            },
+            {
+              "name": "showAllOption",
+              "fieldName": "showAllOption"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js"
+          },
+          "tagName": "enhanced-multiple-choice",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "enhanced-multiple-choice",
+          "declaration": {
+            "name": "EnhancedMultipleChoiceComponent",
+            "module": "src/pausev4-multiple.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/pausev5.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "appTodo",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true
+            },
+            {
+              "kind": "method",
+              "name": "renderContent"
+            },
+            {
+              "kind": "method",
+              "name": "renderButtons"
+            },
+            {
+              "kind": "method",
+              "name": "handlePause"
+            },
+            {
+              "kind": "method",
+              "name": "toggleShowAll"
+            },
+            {
+              "kind": "method",
+              "name": "showAll"
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true
+            },
+            {
+              "kind": "field",
+              "name": "visibleContent",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "privacy": "public",
+              "attribute": "visibleContent"
+            },
+            {
+              "kind": "field",
+              "name": "showButtons",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true",
+              "privacy": "public",
+              "attribute": "showButtons"
+            },
+            {
+              "kind": "field",
+              "name": "showAllOption",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "privacy": "public",
+              "attribute": "showAllOption"
+            },
+            {
+              "kind": "field",
+              "name": "labels",
+              "type": {
+                "text": "array"
+              },
+              "default": "[\"Content 1\", \"Content 2\", \"Content 3\", \"Content 4\", \"Content 5\", \"Content 6\", \"Content 7\", \"Content 8\", \"Content 9\", \"Content 10\"]",
+              "privacy": "public",
+              "attribute": "labels"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "visibleContent",
+              "fieldName": "visibleContent"
+            },
+            {
+              "name": "showButtons",
+              "fieldName": "showButtons"
+            },
+            {
+              "name": "showAllOption",
+              "fieldName": "showAllOption"
+            },
+            {
+              "name": "labels",
+              "fieldName": "labels"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "appTodo",
+          "declaration": {
+            "name": "appTodo",
+            "module": "src/pausev5.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/todo-app-ai.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MicrosoftTodoClone",
+          "members": [
+            {
+              "kind": "field",
+              "name": "filteredTodos"
+            },
+            {
+              "kind": "method",
+              "name": "setActiveTab",
+              "parameters": [
+                {
+                  "name": "tab"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "fetchTodos"
+            },
+            {
+              "kind": "method",
+              "name": "_addTodo"
+            },
+            {
+              "kind": "method",
+              "name": "_handleKeyUp",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "toggleTodo",
+              "parameters": [
+                {
+                  "name": "id"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "toggleImportant",
+              "parameters": [
+                {
+                  "name": "id"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "removeTodo",
+              "parameters": [
+                {
+                  "name": "id"
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "todos",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "privacy": "public",
+              "attribute": "todos"
+            },
+            {
+              "kind": "field",
+              "name": "activeTab",
+              "type": {
+                "text": "string"
+              },
+              "default": "'my-day'",
+              "privacy": "public",
+              "attribute": "activeTab"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "todos",
+              "fieldName": "todos"
+            },
+            {
+              "name": "activeTab",
+              "fieldName": "activeTab"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "microsoft-todo-clone",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "microsoft-todo-clone",
+          "declaration": {
+            "name": "MicrosoftTodoClone",
+            "module": "src/todo-app-ai.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "custom/build/custom.es6.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "custom/src/custom.js",
+      "declarations": [],
+      "exports": []
+    }
+  ]
+}
